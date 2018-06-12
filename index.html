@@ -1,19 +1,90 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marvel" rel="stylesheet">
 </head>
 
 <body>
-Content of the document......
+
+    <div class="sidenav align-middle">
+        <img src="assets/images/thanos.png">
+    </div>
 
 
-<!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <div class="main">
+        <div class="container">
+            <div class="jumbotron">
+                <div class="container text-center" id="main-header">
+                    <header>Infinity Stone Game!</header>
+                </div>
+            </div>
 
-<!-- Script -->
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+            <div class="row">
+                <div class="col-md-12" id = "instructions">
+                    <p>You are playing a guessing game against Thanos! At the beginning of the game, you will be given a random
+                        number. Each of the infinity stones has a number, and clicking that number will add that to your
+                        score
+                    </p>
+                    <p>You win the game by matching your total score to the computer's number. Be careful! If you go above the
+                        computer's number, the computer wins, and Thanos will wipe out half the universe from existence!</p>
+                    <p>The stones will hide their value until you choose them, so choose wisely...</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/images/reality.png" alt="Reality Stone" class="infinity" id="reality-stone">
+                    </a>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <img src="assets/images/power.png" alt="Power Stone" class="infinity" id="power-stone">
+                    </a>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <img src="assets/images/soul.png" alt="soul Stone" class="infinity" id="soul-stone">
+                    </a>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <img src="assets/images/time.png" alt="Time Stone" class="infinity" id="time-stone">
+                    </a>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4 class="panel panel-default" id="random-number"></h4>
+                        <h4 class="panel panel-default" id="wins">Wins: 0</h4>
+                        <h4 class="panel panel-default" id="losses">Losses: 0</h4>
+                        <h4 class="panel panel-default" id="user-score">Score: </h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 

@@ -20,14 +20,14 @@ $(document).ready(function(){
         realityStone = Math.floor(Math.random()*12) + 1;
         spaceStone = Math.floor(Math.random()*12) + 1;
         soulStone = Math.floor(Math.random()*12) + 1;
-        timeStone = Math.floor(Math.random()*12) + 1;\
+        timeStone = Math.floor(Math.random()*12) + 1;
 
         userScore = 0;
 
-        $("#div").html("Wins: " + wins);
-        $("#div").html("Losses :" + losses);
-        $("#div").html(randomNum);
-        $("#div").html(userScore);
+        $("#wins").html("Wins: " + wins);
+        $("#losses").html("Losses :" + losses);
+        $("#random-number").html(randomNum);
+        //$("#div").html(userScore);
         console.log();
     }
 
@@ -51,26 +51,30 @@ $(document).ready(function(){
 
     setUp();
 
-    $("div").on("click", function () {
+    $("#reality-stone").on("click", function () {
         userScore = userScore + realityStone;
+        $("#user-score").html("Score: " + userScore);
         ohDidIWin();
 
     });
 
-    $("div").on("click", function () {
+    $("#power-stone").on("click", function () {
         userScore = userScore + spaceStone;
+        $("#user-score").html("Score: " + userScore);
         ohDidIWin();
 
     });
 
-    $("div").on("click", function () {
+    $("#soul-stone").on("click", function () {
         userScore = userScore + soulStone;
+        $("#user-score").html("Score: " + userScore);
         ohDidIWin();
 
     });
 
-    $("div").on("click", function () {
+    $("#time-stone").on("click", function () {
         userScore = userScore + timeStone;
+        $("#user-score").html("Score: " + userScore);
         ohDidIWin();
 
     });
